@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-   <title>"Meeting Minutes"</title>
+   <title>Meeting Minutes</title>
    <meta name="author" content="Julia Le">
    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
  </head>
@@ -33,24 +33,68 @@
             <li> Took devices home over the weekend</li>
             <!--pictures/diagrams-->
           </ul>
-        <h2> Meeting Recordings</h2>
+      <h2> Meeting Recordings</h2>
       
       <!--audio-->
       <!--video-->
-
+      <!--Notes-->
+      <h2> Notes/Comments</h2>
       <!--form-->
+      <h1>Form</h1>
       <form>
+        <!--radio-->
         <fieldset>
-          <legend>
-            "Select a color:"
-          </legend>
+          <legend><b>Select a color:</b></legend>
           <input type="radio" id="blue" >
           <label for="blue">Blue</label>
           <input type="radio" id="red" >
           <label for="red">Red</label>
           <input type="radio" id="yellow" >
           <label for="yellow">Yellow</label>
-        </fieldset>
+        </fieldset><br>
+        <!--checkbox-->
+        <fieldset>
+          <legend><b>Select some fruit:</b></legend>
+          <input type="checkbox" id="lime" >
+          <label for="lime">Lime</label>
+          <input type="checkbox" id="lemon" >
+          <label for="lemon">Lemon</label>
+          <input type="checkbox" id="grapefruit" >
+          <label for="grapefruit">Grapefruit</label>
+        </fieldset><br>
+        <!--text-->
+        <fieldset>
+          <label for="name"><b>Name:</b></label>
+          <input type="text" id="name" name="name"><br>
+        </fieldset><br>
+        <!--date-->
+        <fieldset>
+          <label for="date"><b>Date:</b></label>
+          <input type="date" id="date" value="2022-10-3">
+        </fieldset> <br>
+        <!--textarea-->
+        <label for="comment"><b>Comment:</b></label> <br>
+        <textarea id="comment" name="comment" rows="4" cols="50">
+        </textarea><br><br>
+        <!--datalist-->
+        <fieldset>
+          <label for="bird-selection"><b>Choose a bird:</b></label>
+          <input list="bird-types" id="bird-selection" name="bird-selection">
+            <datalist id="bird-types">
+                <option value="Duck">
+                <option value="Goose">
+                <option value="Chick">
+            </datalist>
+        </fieldset> <br>
+        <!--select-->
+        <fieldset> 
+          <select name="fish" id="fish">
+            <option value="salmon">Salmon</option>
+            <option value="tuna">Tuna</option>
+            <option value="yellowtail">Yellowtail</option>
+          </select>
+        </fieldset> <br>
+        <input type="submit">
       </form>
 
     </body>
