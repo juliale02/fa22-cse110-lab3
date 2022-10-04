@@ -3,26 +3,38 @@
  <head>
    <title>Meeting Minutes</title>
    <meta name="author" content="Julia Le">
-   <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+   <link rel="icon" type="image/x-icon" href="MediaContent/favicon.png">
  </head>
- <nav>
-
- </nav>
- <main>
-    <body>
-      <h1>Swizer Research Meeting</h1>
+ <header>
+  <h1>Swizer Research Meeting</h1>
       <p> Date: 10/3/22</p>
       <p> Time: 2-4pm</p>
       <p> Attendees: Julia, Jen</p>
+ </header>
+ <nav>
+  <details>
+    <summary>Navigate Sections</summary>
+    <ol>
+      <li><a href="#">Agenda</a></li>
+      <li><a href="#">Work Done</a></li>
+      <li><a href="#">Meeting Recordings</a></li>
+      <li><a href="#">Notes/Comments</a></li>
+      <li><a href="#">Form</a></li>
+   </ol>
+  </details>
+  
+ </nav>
+ <main>
+    <body>
       <!--agenda-->
       <h2>Agenda</h2>
         <div class="agenda">
           <ol>
-            <li> CSE 199 enrollment</li>
+            <li> <em>CSE 199</em> enrollment</li>
             <li> Credit for future quarters</li>
             <li> ERSP plans</li>
             <li> Jamaica Deployment Updates</li>
-            <li> Reinstall App on Devices</li>
+            <li> Reinstall <i>AudioMoth9</i> App on Devices</li>
           </ol>
         </div>
       <h2>Work Done Since Last Meeting</h2>
@@ -31,14 +43,33 @@
             <li> Battery still not graphing</li>
             <li> Timestamp Graph for 3 phones on <strong>9/21</strong></li>
             <li> Took devices home over the weekend</li>
-            <!--pictures/diagrams-->
+            <img src="MediaContent/Sept21.png" alt="graph">
           </ul>
-      <h2> Meeting Recordings</h2>
+      <h2>Meeting Recordings</h2>
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="MediaContent/meeting_audio.mp4" >
+      </audio>
+      <h3>Video</h3>
+      <video controls>
+        <source src="MediaContent/meeting_vid.MOV" >
+      </video>
       
-      <!--audio-->
-      <!--video-->
       <!--Notes-->
       <h2> Notes/Comments</h2>
+      <h3> Fixes</h3> 
+      <ul>
+        <li> Buggy time conversion</li>
+        <li> Battery still not graphing </li>
+        <li> Request audio permissions </li>
+        <!--pictures/diagrams-->
+      </ul>
+      <h3> Success</h3> 
+      <ul>
+        <li> <span class="samsung_type">Samsung</span> phones ran for 20+ hours (ongoing)</li>
+        <!--pictures/diagrams-->
+      </ul>
+      <hr>
       <!--form-->
       <h1>Form</h1>
       <form>
@@ -95,6 +126,7 @@
           </select>
         </fieldset> <br>
         <input type="submit">
+        <button type="button">Click Here!</button>
       </form>
 
     </body>
@@ -102,6 +134,7 @@
  <!--footer-->
  <footer>
   <p>Email: jhle@ucsd.edu</p>
+  <a href="https://docs.google.com/document/d/1zODfVHuP9O4EKVVEg5n5XnLnVe7C7oPyBmoJ3AyWL1g/edit">Research Log</a>
 
  </footer>
 </html>
