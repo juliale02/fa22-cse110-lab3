@@ -1,5 +1,5 @@
 ---
-name: 'ISSUE: CSS Checklist'
+name: CSS Checklist
 about: Include necessary CSS component
 title: "[CSS Checklist]"
 labels: ''
