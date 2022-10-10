@@ -7,18 +7,36 @@
     color: rgb(10, 77, 34);
     background-color: rgb(221, 250, 231)
   } 
- /*color: hex*/
-
+ /*color: hex
+   unit rel: rem
+ */
  h1 {
     color: #00316E;
+    font-size: 3rem;
   } 
   /*color: hsl
+    unit rel: em 
   */
  #agenda {
     color: hsl(89,21%,29%);
+    font-size: 2em;
   } 
-  /*color: name*/ 
+  /*color: name 
+    unit rel: ex
+  */
   #ubusiness {
     color: rosybrown;
+    font-size: 4ex;
   } 
-
+ /*unit abs: mm*/
+  #nbusiness {
+    font-size: 6mm;
+  } 
+  /*unit abs: Q*/
+  #recordings {
+    font-size: 35Q;
+  } 
+  /*unit abs: cm*/
+  #notes{
+    font-size: 1cm;
+  } 
