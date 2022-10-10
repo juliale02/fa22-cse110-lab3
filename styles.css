@@ -1,5 +1,18 @@
  /* start style file for MeetingMinutes */
- /*color*/
+ /*1. color:rgb*/
+ .agenda {
+    color: rgb(10, 77, 34);
+  } 
+ /*2. color: hex*/
+
  h1 {
     color: #00316E;
-  }
+  } 
+  /*3. color: hsl*/
+ #agenda {
+    color: hsl(89,21%,29%);
+  } 
+  /*4. color: name*/ 
+  #ubusiness {
+    color: rosybrown;
+  } 
