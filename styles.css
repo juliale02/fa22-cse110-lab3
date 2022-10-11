@@ -1,5 +1,5 @@
  /* start style file for MeetingMinutes */
-
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
  /*color:rgb
    sizing:max-wdth
  */
@@ -13,13 +13,14 @@
    sizing: min-width
    position: sticky
  */
- h1 {
+ h1, h2, h3{
     color: #00316E;
     font-size: 3rem;
     text-decoration: underline;
     text-align:center;
     min-width: none;
     position: sticky;
+    font-family: 'Montserrat', sans-serif;
   } 
   /*color: hsl
     textcolor:
@@ -28,6 +29,7 @@
  #agenda {
     color: hsl(89,21%,29%);
     font-size: 2em;
+    
   } 
   /*color: name 
     unit rel: ex
@@ -107,7 +109,7 @@
   a:active {
     color: red;
   }
-
+  /*flex*/ 
   #text-container{
     display: flex;
     background-color: #add8e6;
@@ -123,4 +125,20 @@
     font-size: 30px;
     flex-shrink: 3;
     align-self: auto; 
+  }
+  /*grid*/ 
+  #selection-inputs{
+    display: inline-grid; 
+    grid-template-columns: 400px; 
+    grid-template-rows: 70px; 
+    row-gap: 5px;
+  }
+  #selection-inputs > div{
+    justify-self: stretch;
+  }
+  /* query*/ 
+  @media (min-width: 40rem) {
+    #navigate {
+      color: red;
+    }
   }

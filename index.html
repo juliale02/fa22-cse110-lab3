@@ -12,7 +12,7 @@
         <p> Weekly Check-in <br>Date: 10/3/22 <br>Time: 2-4pm <br>Attendees: Julia, Jen <br> </p>
         <nav>
           <details>
-            <summary>Navigate Sections</summary>
+            <summary id="navigate">Navigate Sections</summary>
               <ol>
                 <li><a href="#agenda">Agenda</a></li>
                 <li><a href="#ubusiness">Unfinished Business</a></li>
@@ -76,29 +76,52 @@
               <!--pictures/diagrams-->
             </ul>
             <hr>
+
+
+
       <!--form-->
     <h1 id="form">Form</h1>
       <form>
-        <!--radio-->
-        <fieldset>
-          <legend><b>Select a color:</b></legend>
-          <input type="radio" id="blue" >
-          <label for="blue">Blue</label>
-          <input type="radio" id="red" >
-          <label for="red">Red</label>
-          <input type="radio" id="yellow" >
-          <label for="yellow">Yellow</label>
-        </fieldset><br>
-        <!--checkbox-->
-        <fieldset>
-          <legend><b>Select some fruit:</b></legend>
-          <input type="checkbox" id="lime" >
-          <label for="lime">Lime</label>
-          <input type="checkbox" id="lemon" >
-          <label for="lemon">Lemon</label>
-          <input type="checkbox" id="grapefruit" >
-          <label for="grapefruit">Grapefruit</label>
-        </fieldset><br>
+
+        <div id="selection-inputs">
+            <!--radio-->
+            <div>
+            <fieldset class="selection-item">
+              <legend><b>Select a color:</b></legend>
+              <input type="radio" id="blue" >
+              <label for="blue">Blue</label>
+              <input type="radio" id="red" >
+              <label for="red">Red</label>
+              <input type="radio" id="yellow" >
+              <label for="yellow">Yellow</label>
+            </fieldset><br>
+          </div>
+            <!--checkbox-->
+            <div class="selection-item">
+            <fieldset>
+              <legend><b>Select some fruit:</b></legend>
+              <input type="checkbox" id="lime" >
+              <label for="lime">Lime</label>
+              <input type="checkbox" id="lemon" >
+              <label for="lemon">Lemon</label>
+              <input type="checkbox" id="grapefruit" >
+              <label for="grapefruit">Grapefruit</label>
+            </fieldset><br>
+          </div>
+            <!--datalist-->
+            <div class="selection-item">
+            <fieldset >
+              <label for="bird-selection"><b>Choose a bird:</b></label>
+              <input list="bird-types" id="bird-selection" name="bird-selection">
+                <datalist id="bird-types">
+                    <option value="Duck">
+                    <option value="Goose">
+                    <option value="Chick">
+                </datalist>
+            </fieldset> <br>
+          </div>
+        </div>
+
         <div id="text-container">
             <!--text-->
             <div class="text-item">
@@ -121,16 +144,6 @@
             </textarea><br><br>
             </div>
       </div>
-        <!--datalist-->
-        <fieldset>
-          <label for="bird-selection"><b>Choose a bird:</b></label>
-          <input list="bird-types" id="bird-selection" name="bird-selection">
-            <datalist id="bird-types">
-                <option value="Duck">
-                <option value="Goose">
-                <option value="Chick">
-            </datalist>
-        </fieldset> <br>
         <!--select-->
         <fieldset> 
           <select name="fish" id="fish">
