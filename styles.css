@@ -1,19 +1,25 @@
  /* start style file for MeetingMinutes */
 
  /*color:rgb
+   sizing:max-wdth
  */
  .agenda {
     color: rgb(10, 77, 34);
+    max-width: 20cm;
   } 
  /*color: hex
    unit rel: rem
    text-decoration: 
+   sizing: min-width
+   position: sticky
  */
  h1 {
     color: #00316E;
     font-size: 3rem;
     text-decoration: underline;
     text-align:center;
+    min-width: none;
+    position: sticky;
   } 
   /*color: hsl
     textcolor:
@@ -85,4 +91,11 @@
   /*display: inline-block*/ 
   .timestamp{
     display: inline-block;
+  }
+  /*sizing: height. width
+    position: relative*/ 
+  video{
+    height: 7cm; 
+    width: auto; 
+    position: relative;
   }
