@@ -79,6 +79,8 @@
   /*display: none*/
   .hidden{
     display: none;
+    text-align: center;
+    color: red;
   }
   /*display: inline-block*/ 
   .timestamp{
