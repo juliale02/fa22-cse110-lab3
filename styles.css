@@ -107,3 +107,20 @@
   a:active {
     color: red;
   }
+
+  #text-container{
+    display: flex;
+    background-color: #add8e6;
+    gap: 30px; 
+    justify-content: flex-start; 
+    flex-flow: row wrap;
+    flex-direction: row; 
+  }
+  .text-item{
+    background-color: #c1e6f2;
+    margin: 20px;
+    padding: 10px;
+    font-size: 30px;
+    flex-shrink: 3;
+    align-self: auto; 
+  }
