@@ -99,20 +99,28 @@
           <input type="checkbox" id="grapefruit" >
           <label for="grapefruit">Grapefruit</label>
         </fieldset><br>
-        <!--text-->
-        <fieldset>
-          <label for="name"><b>Name:</b></label>
-          <input type="text" id="name" name="name"><br>
-        </fieldset><br>
-        <!--date-->
-        <fieldset>
-          <label for="date"><b>Date:</b></label>
-          <input type="date" id="date">
-        </fieldset> <br>
-        <!--textarea-->
-        <label for="comment"><b>Comment:</b></label> <br>
-        <textarea id="comment" name="comment" rows="4" cols="50">
-        </textarea><br><br>
+        <div id="text-container">
+            <!--text-->
+            <div class="text-item">
+            <fieldset>
+              <label for="name"><b>Name:</b></label>
+              <input type="text" id="name" name="name"><br>
+            </fieldset><br>
+            </div>
+            <!--date-->
+            <div class="text-item">
+            <fieldset>
+              <label for="date"><b>Date:</b></label>
+              <input type="date" id="date">
+            </fieldset> <br>
+            </div>
+            <!--textarea-->
+            <div class="text-item">
+            <label for="comment"><b>Comment:</b></label> <br>
+            <textarea id="comment" name="comment" rows="4" cols="50">
+            </textarea><br><br>
+            </div>
+      </div>
         <!--datalist-->
         <fieldset>
           <label for="bird-selection"><b>Choose a bird:</b></label>
