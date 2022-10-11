@@ -6,6 +6,7 @@
  .agenda {
     color: rgb(10, 77, 34);
     max-width: 20cm;
+    
   } 
  /*color: hex
    unit rel: rem
@@ -13,14 +14,13 @@
    sizing: min-width
    position: sticky
  */
- h1, h2, h3{
+ h1, h2{
     color: #00316E;
     font-size: 3rem;
     text-decoration: underline;
     text-align:center;
     min-width: none;
     position: sticky;
-    font-family: 'Montserrat', sans-serif;
   } 
   /*color: hsl
     textcolor:
@@ -81,8 +81,8 @@
     border-radius: 3mm;
     padding:1% 2% 1% 3%; 
     margin:1% 2% 1% 1%; 
-    background-color: rgb(221, 250, 231);
     display: inline flow;
+    background-color: rgb(221, 250, 231);
   }
   /*display: none*/
   .hidden{
@@ -118,6 +118,7 @@
     flex-flow: row wrap;
     flex-direction: row; 
   }
+  /*selector: class*/
   .text-item{
     background-color: #c1e6f2;
     margin: 20px;
@@ -126,13 +127,15 @@
     flex-shrink: 3;
     align-self: auto; 
   }
-  /*grid*/ 
+  /*grid
+    selector: element*/ 
   #selection-inputs{
     display: inline-grid; 
     grid-template-columns: 400px; 
     grid-template-rows: 70px; 
     row-gap: 5px;
   }
+  /*selector: child*/
   #selection-inputs > div{
     justify-self: stretch;
   }
@@ -142,3 +145,28 @@
       color: red;
     }
   }
+  /*selector: attribute*/
+  label[for="bird-selection"] {
+    font-style: italic;
+  }
+  /*selector: universal*/
+  * {
+    font-family: 'Montserrat', sans-serif;
+  }
+  /*selector: general sibiling*/ 
+  p ~ span{
+    color: red; 
+  }
+  /*selector: adjacent sibiling*/ 
+  input + label{
+    color: orange; 
+  }
+  /*selector: combine*/ 
+  .fruit.grapefruit{
+    color: rgb(239, 12, 50); 
+  }
+  /*selector: descendents*/ 
+  ul li {
+    list-style-type: circle;
+  }
+  
