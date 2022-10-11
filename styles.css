@@ -1,20 +1,22 @@
  /* start style file for MeetingMinutes */
 
  /*color:rgb
- background-color
  */
  .agenda {
     color: rgb(10, 77, 34);
-    background-color: rgb(221, 250, 231)
   } 
  /*color: hex
    unit rel: rem
+   text-decoration: 
  */
  h1 {
     color: #00316E;
     font-size: 3rem;
+    text-decoration: underline;
+    text-align:center;
   } 
   /*color: hsl
+    textcolor:
     unit rel: em 
   */
  #agenda {
@@ -36,7 +38,49 @@
   #recordings {
     font-size: 35Q;
   } 
-  /*unit abs: cm*/
+  /*unit abs: cm
+    marginL auto*/
   #notes{
     font-size: 1cm;
+    margin: auto;
+    
   } 
+  /*border long:
+    padding longt 
+    margin long: */ 
+
+  ul{
+    border-style: solid;
+    border-color: rebeccapurple;
+    border-width: 2px;
+    border-radius: 3mm;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: block flow;
+  }
+
+  /*backgroung-color:
+    border short:
+    padding short: */ 
+  ol{
+    border: 2px solid rgb(10, 77, 34);
+    border-radius: 3mm;
+    padding:1% 2% 1% 3%; 
+    margin:1% 2% 1% 1%; 
+    background-color: rgb(221, 250, 231);
+    display: inline flow;
+  }
+  /*display: none*/
+  .hidden{
+    display: none;
+  }
+  /*display: inline-block*/ 
+  .timestamp{
+    display: inline-block;
+  }
