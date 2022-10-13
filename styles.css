@@ -13,6 +13,7 @@
    text-decoration: 
    sizing: min-width
    position: sticky
+   selector: list
  */
  h1, h2{
     color: #00316E;
@@ -47,15 +48,15 @@
     font-size: 35Q;
   } 
   /*unit abs: cm
-    marginL auto*/
+    margin: auto*/
   #notes{
     font-size: 1cm;
     margin: auto;
     
   } 
-  /*border long:
-    padding longt 
-    margin long: */ 
+  /*border: long
+    padding: long
+    margin: long */ 
 
   ul{
     border-style: solid;
@@ -73,7 +74,7 @@
     display: block flow;
   }
 
-  /*backgroung-color:
+  /*background-color:
     border short:
     padding short: */ 
   ol{
@@ -130,7 +131,7 @@
   /*grid
     selector: element*/ 
   #selection-inputs{
-    display: inline-grid; 
+    display: grid; 
     grid-template-columns: 400px; 
     grid-template-rows: 70px; 
     row-gap: 5px;
