@@ -130,7 +130,7 @@
   /*grid
     selector: element*/ 
   #selection-inputs{
-    display: inline-grid; 
+    display: grid; 
     grid-template-columns: 400px; 
     grid-template-rows: 70px; 
     row-gap: 5px;
